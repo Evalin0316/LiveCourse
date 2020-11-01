@@ -62,6 +62,7 @@ table {
   }
   img{
     display: block;
+    max-width:100%;
   }
   header{
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true");
@@ -147,7 +148,7 @@ table {
     color:#FFFFFF;
     width: 100%;
   }
-  .brand>p{
+  .brand >p{
     padding-top: 16px;
     padding-bottom: 32px;
     font-size: 24px;
