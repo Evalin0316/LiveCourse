@@ -658,7 +658,16 @@ h5 {
 	}
   }
   
-
+  .classic .product-image {
+	width: 60%;
+  }
+  
+  @media only screen and (max-width: 767px) {
+	.classic .product-image {
+	  width: 100%;
+	}
+  }
+  
   .classic .classic_item {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -670,29 +679,46 @@ h5 {
 	font-style: italic;
 	font-weight: 900;
   }
-
-
+  
+  .classic .classic_item:nth-child(even) {
+	margin-right: 30px;
+  }
+  
   .classic .classic_item img {
 	margin-right: 8px;
   }
-
-  .classic .classic_item {
-	width: 60%;
-  }
-
-  .classic .classic_item {
-	text-transform: uppercase;
-  }
-
   
   @media only screen and (max-width: 992px) {
-	.classic .classic_item:nth-child(even) {
-	  -webkit-box-orient: horizontal;
-	  -webkit-box-direction: normal;
-		  -ms-flex-direction: row;
-			  flex-direction: row;
+	.classic .classic_item p{
+	  font-size: 2rem;
+	  line-height: 42px;
+	}
+	.classic .classic_item img {
+	  width: 32px;
+	  height: 32px;
 	}
   }
+  
+  @media only screen and (max-width: 767px) {
+	.classic .classic_item {
+	  position: absolute;
+	  margin-left: 0;
+	  z-index: 1;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+	}
+	.classic .classic_item img,
+	.classic .classic_item p {
+	  color: white;
+	}
+	.classic .classic_item img {
+	  -webkit-filter: brightness(500);
+			  filter: brightness(500);
+	}
+  }
+  
 
   .crossover {
 	background: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png") center center no-repeat;
@@ -762,9 +788,6 @@ h5 {
 	}
   }
   
-  
-
-
 .customs .recommend_card {
   width: calc(100% / 4 - 15px);
   border: 1px solid #dee2e6;
@@ -814,7 +837,7 @@ h5 {
 
 @media only screen and (max-width: 992px) {
   .contact {
-    padding: 40px 159px;
+    padding: 40px 150px;
   }
 }
 
