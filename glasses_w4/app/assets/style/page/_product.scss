@@ -1,7 +1,7 @@
 .optical{
     &_item{
         width: calc(100%/4 - 30px);
-        margin:0  15px 104px;
+        margin:0 15px 104px;
         .content{
             display: flex;
             justify-content: space-between;
@@ -58,7 +58,7 @@
 .sunglasses{
     &_item{
         width:calc(100%/3 - 30px);
-        margin:0 15px 104px;
+        margin:0 15px 100px;
         .content{
             display:flex;
             flex-direction:column;

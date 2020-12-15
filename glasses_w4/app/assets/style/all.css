@@ -1230,7 +1230,7 @@ footer .copyright .logo {
 
 .optical_item {
   width: calc(100%/4 - 30px);
-  margin: 0  15px 104px;
+  margin: 0 15px 104px;
 }
 
 .optical_item .content {
@@ -1292,7 +1292,7 @@ footer .copyright .logo {
 
 .sunglasses_item {
   width: calc(100%/3 - 30px);
-  margin: 0 15px 104px;
+  margin: 0 15px 100px;
 }
 
 .sunglasses_item .content {
