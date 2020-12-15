@@ -1,0 +1,356 @@
+.banner{ 
+    background-image:url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 640px;
+    color: #650300;
+        .slogan{
+        height: 100%;
+    }
+    
+    @include breakpoint(pad){
+        background-image:url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png");
+        background-size:cover;
+        height:320px;
+    }
+        .container {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 64px 10px 80px;
+      }
+    @include breakpoint(phone){
+        background-image:url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png");
+		background-size:cover;
+		height:320px;
+    }
+        .container {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 64px 10px 80px;
+        }
+}
+
+.introduction { 
+    background-color:#AA06010D;
+
+
+    .title{
+    font-weight:bold;
+    font-size:32px;
+}
+
+    .service {
+    @include breakpoint(pad){
+        margin:0 47px;
+        
+    }
+
+    & .service_item{
+        width: calc(100% / 4 - 30px);
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    
+    @include breakpoint(pad){
+      width: calc(100% / 2 - 50px);
+	  margin-bottom: 40px;
+    }
+    
+    @include breakpoint(phone){
+      width: calc(100% / 2 - 50px);
+	  margin-bottom: 40px;
+    }
+    img{
+        margin-bottom:40px;
+    }
+  }
+}
+    @include breakpoint(pad){
+        .time{
+            order:1;
+        }
+        .protect{
+            order:2;
+        }
+        .price{
+            order:3;
+        }
+        .glasses{
+            order:4;
+        }
+    }
+    @include breakpoint(phone){
+        .time{
+            order:1;
+        }
+        .protect{
+            order:2;
+        }
+        .price{
+            order:3;
+        }
+        .glasses{
+            order:4;
+        }
+    }
+}
+    .classic{
+        .product_item{
+            text-transform: uppercase;
+        }
+        &:nth-child(even){
+            flex-direction:row-reverse;
+        
+        @include breakpoint(pad){
+            flex-direction:row;
+        }
+      }
+      @include breakpoint(phone){
+            position: relative;
+            margin-bottom:8px;
+      &_image{
+        width: 60%;
+        @include breakpoint(phone){
+            width: 100%;
+        }
+      }
+      &_item{
+          display:flex;
+          justify-content: center;
+          margin-left: 30px;
+	      font-style: italic;
+          font-weight: 900;
+          &:nth-child(even){
+            margin-right: 30px;
+          }
+          img{
+            margin-right: 8px;
+          }
+          @include breakpoint(pad){
+              p{
+                  font-size: 2rem;
+                  line-height: 42px;
+              }
+              img{
+                width: 32px;
+                height: 32px;
+              }
+          }
+          @include breakpoint(phone){
+            position: absolute;
+            margin-left: 0;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img,
+            p{
+                color: white;
+            }
+            img{
+                filter: brightness(500);
+            }
+          }
+      }
+    }
+}
+
+    .crossover{
+        background-image:url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png") center center no-repeat;
+
+    .glass_title{
+        font-size:32px;
+    }
+    &_list{
+        @include breakpoint(phone){
+            flex-wrap:wrap;
+        }
+    }
+    &_item{
+        position: relative;
+        width: 50%;
+        .overlay{
+            position: absolute;
+	        top: 0;
+	        bottom: 0;
+	        left: 0;
+	        right: 0;
+	        background-color: rgba(255, 255, 255, 0.5);
+	        z-index: 1;
+        }
+        @include breakpoint(phone){
+            width: 100%;
+        }
+    }
+    &_img{
+        z-index: 0;
+        position: relative;
+    }
+    &_title{
+        position: absolute;
+	    z-index: 2;
+	    top: 50%;
+	    left: 50%;
+	    font-size: 72px;
+	    width: 100%;
+	    text-align: center;
+        color: #AA0601;
+    }
+    @include breakpoint(pad){
+       p{
+        font-size: 32px;
+        line-height: 25px;
+        color: #aa0601;
+       }
+    }
+    @include breakpoint(phone){
+        .double{
+            margin-bottom:16px;
+        }
+    }
+}
+    .customs{
+        .recommend{
+            &_card{
+            width: calc(100% / 4 - 15px);
+             border: 1px solid #dee2e6;
+             img{
+                width: 100%;
+             }
+             .content{
+                padding: 0 16px;
+             }
+             .update{
+                margin: 10px 0 15px;
+                color: #707070;
+             }
+             .name{
+                margin: 14px 0 7px;
+             }
+             @include breakpoint(pad){
+                width: calc(100% / 2 - 15px);
+                margin-bottom: 28px;
+             }
+             @include breakpoint(phone){
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+         }
+        }
+
+    }
+    .contact{
+        padding: 64px 0 80px;
+        background-color: #aa06010d;
+        @include breakpoint(pad){
+            padding: 40px 150px;
+        }
+        @include breakpoint(phone){
+            padding: 32px 15px 40px;
+        }
+        .content{
+            max-width: 730px;
+            margin: 0 auto;
+        }
+        &_form{
+            margin-top: 20px;
+        }
+        input,
+        textarea{
+            width: 100%;
+            margin: 4px 0 16px;
+            padding: 14px 16px;
+            border: 1px solid #000000;
+            background-color: transparent;
+        @include breakpoint(pad){
+            font-size: 14px;
+        }
+        &::placeholder{
+            font-size:16px;
+            @include breakpoint(pad){
+                font-size:14px;
+            }
+        }
+    }
+    input[type="checkbox"] + label{
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 4px;
+    }
+    input[type="checkbox"]{
+        display:none;
+    }
+    input[type="checkbox"] + label::before {
+        content: "\2714";
+        border: 1px solid #000;
+        border-radius: 2px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        padding-left: 1px;
+        margin: -3px 1px 0 0;
+        color: transparent;
+        @include breakpoint(pad){
+            width: 16px;
+            height:14px;
+        }
+      }
+      input[type="checkbox"]:checked + label:before {
+        background-color: #aa0601;
+        color: #ffffff;
+      }
+      .submit{
+        margin-top: 42px;
+        text-align: center;
+      }
+      input[type="submit"] {
+        width: 350px;
+        cursor: pointer;
+        border: none;
+        background: #aa0601;
+        color: #ffffff;
+        @include breakpoint(pad){
+            width: 210px;
+            font-size: 14px;
+        }
+        @include breakpoint(phone) {
+            width: 165px;
+        }
+        &:hover {
+            background:#AA0601;
+        }
+      }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+.nav{
+    background-color:#AA0601;
+    align-items: center;
+    padding: 20px;
+    &_item{
+        padding:20px;
+    }
+    @include breakpoint(pad){
+        padding:20px;
+    }
+    @include breakpoint(phone){
+        padding:20px;
+    }
+
+    &_item{
+    padding:20px;
+    a{
+    color:#FFFFFF;
+	display:block;
+    }
+    @include breakpoint(pad){
+        padding:20px;
+    }
+    @include breakpoint(phone){
+        padding:20px
+    }
+    }
+}

@@ -1,0 +1,53 @@
+.productsItem{
+    .menu{
+        max-width: 1110px;
+        margin: 0 auto;
+        li{
+            border: 1px solid #dcdcdc;
+            width: calc(100% / 3);
+        }
+        a{
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            padding: 24px 0 16px 0;
+            color:#000000;
+        }
+        .active{
+            border-bottom: 16px solid #aa0601;
+        }
+    }
+    @include breakpoint(pad){
+        .menu{
+            a{
+                font-size: 28px;
+                line-height: 24px;
+                padding:18px 51px;
+            }
+            img{
+                width:32px;
+                height: 32px;
+            }
+            .active{
+                border-bottom:8px solid #aa0601;
+            }
+        }
+    }
+    @include breakpoint(phone){
+        .menu{
+            a{
+                font-size:14px;
+                line-height:19px;
+                padding:8px 0 4px 0;
+            }
+            img{
+                width:14px;
+                height:14px;
+            }
+            .active{
+                border-bottom:4px solid #aa0601;
+            }
+        }
+
+    }
+}

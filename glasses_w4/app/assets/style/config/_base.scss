@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 1.5;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    @include breakpoint(pad){
+        font-size: 2rem;
+    }
+    @include breakpoint(phone){
+        font-size: 1.5rem;
+    }
+}
+
+h2{
+    font-size:2rem;
+    @include breakpoint(pad){
+        font-size: 1.5rem;
+    }
+    @include breakpoint(phone){
+        font-size: 1.5rem;
+    }
+}
+
+h3{
+    font-size: 1.5rem;
+    @include breakpoint(pad){
+        font-size: 1rem;
+    }
+    @include breakpoint(phone){
+        font-size: 1rem;
+    }
+
+}
+
+h4{
+    font-size: 1rem;
+    @include breakpoint(pad){
+        font-size: 0.5rem;
+    }
+    @include breakpoint(phone){
+        font-size: 0.25rem;
+    }
+}
+
+h5{
+    font-size: 0.25rem;
+    @include breakpoint(pad){
+        font-size: 0.25rem;
+    }
+}
+
+.com{
+    font-size:14px;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+.text{
+    &-center{
+        text-align: center;
+    }
+    &-danger{
+        color: #650300;
+    }
+    &-white{
+        color:#FFFFFF;
+    }
+    &-bold{
+        background-color: #aa06010d;
+    }
+}
+
+.bg-pink{
+    background-color: #aa06010d;
+}
+
+.container{
+    max-width: 1110px;
+	margin: 0 auto;
+    padding: 64px 10px 80px;
+    @include breakpoint(pad){
+        max-width:690px;
+        padding:30px 0;
+    }
+    @include breakpoint(phone){
+        width:100%;
+        padding:32px 5px;
+    }
+}
+
+.title{
+    font-weight: bold;
+    @include breakpoint(pad){
+        margin-bottom: 32px;
+    }
+    @include breakpoint(phone){
+        margin-bottom:20px;
+    }
+}
+
+
+
+
+
