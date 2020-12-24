@@ -1,0 +1,28 @@
+.assignment {
+    &__list {
+        width: 30%;
+    }
+    &__content {
+        width: 70%;
+    }
+    
+
+    &__content__user {
+        visibility: visible;
+        &.active {
+            visibility: hidden;
+        }
+    }
+    .reply__content {
+        display: none;
+        top: 0;
+        left: 0;
+        &.active {
+            display: block;
+        }
+        // 隱藏卷軸右下角三角
+        textarea {
+            resize: none;
+        }
+    }
+}

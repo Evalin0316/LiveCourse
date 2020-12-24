@@ -1,0 +1,17 @@
+/* 全站設定 */
+img {
+    display:block;
+    max-width:100%;
+    height:auto; 
+}
+a {
+    transition: all linear 300ms;
+}
+ul {
+    list-style: none;
+}
+textarea {
+    &:focus{
+        outline: none;
+    }
+}
