@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 @import "../bootstrap/scss/functions";
+@import "./helpers/variables";
 @import "../bootstrap/scss/bootstrap";
 
-@import "./helpers/variables";
-
 @import "./utilities/utilities";
-
 @import "./base/base";
+
 
 @import "./modules/avatar";
 
